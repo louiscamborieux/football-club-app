@@ -1,0 +1,414 @@
+img {
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+fieldset {
+  border: none;
+}
+
+
+
+
+
+.pad_form_m {
+    
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+} 
+
+
+
+
+header, footer {
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+   
+}
+
+header {
+    display: flex;
+    height: 130px;
+}
+
+footer {
+    height: 15vh;
+    bottom: 0;
+}
+
+.mimg_container {
+    
+    border: 3px solid black;
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+    top: 0;
+}
+
+.menu_container {
+    border: 30px solid black;
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 35%;
+    bottom: 0;
+}
+
+.topnav {
+    overflow: visible;
+    background-color: #333;
+    position: relative;
+    left: 20%;
+    width: 60.4%;
+    height: 50%;
+    bottom: -9vh;
+    
+    
+}
+
+.topnav a {
+    
+    float: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    
+}
+
+.topnav a:hover {
+  background-color: #D57BFF;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #9D05FE;
+    color: white;
+}
+
+.deconnexion {
+    position: relative;
+    left: 110%;
+    width: 15%;
+    
+}
+
+#img_TFC {
+    height:55px;
+    width: 55px;
+}
+
+#table1 {
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2px;
+}
+
+
+/**Feuille match*/
+
+#form_comp {
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+#container_form {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40%;
+    padding: 3%;
+    justify-content: space-around;
+    
+}
+
+.el_pad_comp {
+    margin: auto;
+    
+   
+}
+
+.form_span {
+
+}
+
+#ajt_joueur {
+    border: 3px solid black;
+    text-align: center;
+    padding: 3px;
+    background: yellow;
+    
+}
+
+* {
+  font-family: Tahoma ;
+}
+
+
+
+fieldset.selection {
+    display: flex;
+}
+
+.selection label , .selection span {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.selection label {
+    justify-content: space-evenly;
+}
+
+/*Style du tableau*/
+.tableau-style {
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    margin: 30px auto;
+    border: 2px solid #8B008B;
+}
+
+thead tr {
+    background-color : 	#800080;
+    color: #fff;   
+    text-align: left;
+}
+
+th, td {
+    padding: 15px 20px;
+}
+
+tbody tr, td, th {
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color : #f3f3f3;
+}
+
+/*Fin du tableau*/
+
+/*Création du bouton*/
+.button {
+    padding:8px 16px;
+    display:inline-block;
+    text-decoration:none;
+    border-radius:3px;
+    background: #8B008B;
+    color:#fff;
+    cursor:pointer;
+
+}
+
+.button:hover {
+   background: #9B009B; 
+}
+/*Fin création bouton*/
+
+/*Création des notes*/
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #09f;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+/*Fin création étoiles*/
+
+
+#connexion-background{
+ background: #800080;
+
+}
+.conex_box{
+ width:400px;
+ margin:0 auto;
+ margin-top:10%;
+}
+
+.form_L {
+ width:100%;
+ padding: 30px;
+ border: 1px solid #f1f1f1;
+ background: #fff;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.conex_box h1{
+ width: 38%;
+ margin: 0 auto;
+ padding-bottom: 10px;
+}
+
+
+input[type=text], input[type=password] {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+}
+
+
+#button1{
+ background-color: #800080;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+}
+
+#button1:hover{
+ background-color: #800080;
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ background-color: #900090;
+}
+
+.container1:hover {
+ background-color: white;
+ color: #AA00FF;
+ border: 1px solid #AA00FF;
+}
+
+.infos {
+    border: solid 5px #800080;
+    display: flex;
+    margin: auto;
+    margin-top: 5em;
+    justify-content: center;
+    width:50%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.infos2 {
+    border: solid 5px yellow;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ul_1 {
+    
+    list-style: none;
+    
+}
+
+.li_1 {
+    padding: 10px 5px;
+}
+
+.score {
+    width : 15vw;
+    height : 15vw;
+    font-size : 12vw;
+    margin : 5px;
+    text-align: center;
+}
+
+#scoreset {
+    display:flex;
+    justify-content: center;
+}
+
+#scoreset label {
+    text-align: center;
+    
+}
+
